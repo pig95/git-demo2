@@ -1,0 +1,29 @@
+git status: 查看
+git add <file name>
+git commit -m <xxxx> 提交并写上注释
+git reset --hard <xxxx> 回退版本
+git reflog 查看回流版本号
+
+撤销修改
+git checkout -- <file name> 撤销输入内容
+git restore <file name> 撤销输入内容
+git restore --staged <file name>  将提交到暂时区的文件 撤回到还没有提交到暂时区
+git reset HEAD <file name> 将提交到暂时区的文件 撤回到还没有提交到暂时区
+
+删除文件
+rm <file name>
+
+创建ssh秘钥 和公钥
+ssh-keygen -t rsa -C "1287889592@qq.com"
+cat C:\Users\ASUS/.ssh/id_rsa.pub 
+
+与远程仓库建立连接
+git remote add origin git@github.com:pig95/git-demo2.git
+
+保存状态命令
+git stash 
+git stash list
+git stash apply
+git stash pop
+git stash drop
+git stash clear
