@@ -27,3 +27,9 @@ git stash apply
 git stash pop
 git stash drop
 git stash clear
+
+新建dev分支  切换到dev分  远程仓库 新建dev 并且与本地dev分支关联
+git checkout -b dev origin/dev
+
+与远程仓库 dev分支关联
+git branch --set--upstream-to=origin/dev dev
